@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mRedCar : UIImageView!
+    @IBOutlet weak var mBlueCar : UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-
+    
+    @IBAction func hideRed(_ sender: AnyObject) {
+        mRedCar.isHidden = true
+    }
+    
+    
+    @IBAction func hideBlue(_ sender: AnyObject) {
+        mBlueCar.isHidden = true
+    }
 }
 
